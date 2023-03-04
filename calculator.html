@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 400px;
+            width: 200px;
+            border: 1px solid;
+            padding: 50px;
+            margin: 0 auto;
+        }
+        #num{
+          flex-direction: row;
+          justify-content: space-between;
+        }
+       .but{
+         height: 50px;
+         width: 50px;
+         flex-wrap: wrap;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+    <div>
+        <form action="" name="form1">
+              <input type="text" name="inp1" id="input" placeholder="enter first number....."><br><br>
+       
+               <input type="text" name="" id="inp1" placeholder="enter second number....."><br><br>
+
+               <input type="text" name="" id="ans" placeholder="ans...."><br><br>
+       
+                <input type="button" class="but"  value="1" onclick="form1.inp1.value += '1'">
+                <input type="button" class="but"  value="2" onclick="form1.inp1.value += '2'">
+                <input type="button" class="but"  value="3" onclick="form1.inp1.value += '3'"><br>
+                <input type="button" class="but"  value="4" onclick="form1.inp1.value += '4'">
+                <input type="button" class="but"  value="5" onclick="form1.inp1.value += '5'">
+                <input type="button" class="but"  value="6" onclick="form1.inp1.value += '6'"><br>
+                <input type="button" class="but"  value="7" onclick="form1.inp1.value += '7'">
+                <input type="button" class="but"  value="8" onclick="form1.inp1.value += '8'">
+                <input type="button" class="but"  value="9" onclick="form1.inp1.value += '9'"><br>
+                <input type="button" class="but"  value="*" onclick="form1.inp1.value += '*'">
+                <input type="button" class="but"  value="0" onclick="form1.inp1.value += '0'">
+                <input type="button" class="but"  value="/" onclick="form1.inp1.value += '/'"><br>
+                <input type="button" class="but"  value="+" onclick="form1.inp1.value += '+'">
+                <input type="button" class="but"  value="=" onclick="form1.inp1.value += '='">
+                <input type="button" class="but"  value="-" onclick="form1.inp1.value += '-'">
+
+       
+     </div>
+        
+    </nav>
+</form>
+    <p id="print"></p>
+    <script>
+        function click() {
+            let ele=document.getElementById("but").value;
+            let pri=document.getElementById("inp1");
+            pri.innerHTML=ele;
+        }
+        // function box2() {
+        //     let ele=document.getElementById("but2").value;
+        // let select=document.getElementById("print");
+        // select.innerHTML=ele ;
+        // select.style.color="red";
+        // }
+                    function getadd() {
+                    var num1=Number(document.getElementById("in1").value);
+                    var num2=Number(document.getElementById("in2").value);
+                    let add=num1+num2;
+                     //  console.log(add);
+                      let pri=document.getElementById("print1")
+                      pri.innerHTML="ADDITION IS  " +add;
+                      pri.style.color="red"
+                     }
+
+                     function getsub() {
+                        var num1=Number(document.getElementById("in1").value);
+                 var num2=Number(document.getElementById("in2").value);
+                        let sub=num1-num2;
+                          console.log(sub);
+                         let pri1=document.getElementById("print2")
+                         pri1.innerHTML="ADDITION IS  " +sub;
+                        pri1.style.color="blue"
+                     }
+
+                     function getmult() {
+                        var num1=Number(document.getElementById("in1").value);
+                 var num2=Number(document.getElementById("in2").value);
+                        let mult=num1*num2;
+                         console.log(mult);
+                           let pri2=document.getElementById("print3")
+                             pri2.innerHTML="ADDITION IS  " +mult;
+                              pri2.style.color="green"
+    </script>
+</body>
+</html>

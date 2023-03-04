@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      section {
+         height: 850px;
+         width: 550px;
+         border: 1px solid; 
+         margin: 0 auto;
+
+      }
+
+      main {
+         height: 800px;
+         width: 500px;
+         border: 1px solid;
+         background-color: midnightblue;
+         margin: 0 auto;
+
+         margin-top: 25px;
+         border-radius: 5%;
+      }
+
+      #signup {
+         text-align: center;
+         padding: 10px;
+         text-indent: 50px;
+         background-image: linear-gradient(to right, red, orange);
+       margin-left: 80px;
+         /* margin: 0 auto; */
+         font-size: 50px;
+         margin-top: 30px;
+
+      }
+
+      #who {
+         color: white;
+         text-align: center;
+         margin-top: 25px;
+         font-size: 30px;
+      }
+
+      #photo {
+
+         padding: 20 px;
+         height: 150px;
+         width: 400px;
+         /* border: 1px solid white; */
+         margin: 0 auto;
+         display: inline-block;
+         margin-left: 20px;
+         margin-top: 20px;
+         margin: 0 auto;
+      }
+
+      #info {
+         /* margin-top: 300px; */
+         height: 420px;
+         width: 400px;
+         /* border: 1px solid white; */
+         margin: 0 auto;
+         font-size: large;
+         line-height: 80px;
+         padding: 30px;
+
+      }
+      #name{
+         height: 50px;
+         width: 400px;
+         /* border: 1px solid white; */
+         margin-left: 20px;
+         font-size: 30px;
+         word-spacing: 60px;
+         text-decoration: dashed;
+         margin-left: 30px;
+         color: gold;
+        
+      }
+
+      #text {
+         height: 50px;
+         width: 350px;
+         margin-left: 25px;
+         background-color: midnightblue;
+          
+      }
+
+      #use {
+         height: 80px;
+         width: 350;
+         border: 2px solid; 
+         border-radius: 50px;
+      }
+     
+      a:hover{
+         color: yellow;
+         height: 50px;
+         font-size: 50px;
+         text-decoration: none;
+
+      }
+     
+     img{
+         border-radius: 50%;
+         border-spacing: 20px;
+      }
+   </style>
+</head>
+
+<body></body>
+<section>
+   <main>
+
+      <div id="who">who are you?</div>
+      <div id="photo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <img
+               src="data:image/png;base64,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"
+               alt="" height="100" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfrlXL1POKB6chHdW-GclSvMIvKMA8FME1w&usqp=CAU"
+               alt="" height="100px" width="100px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpO1EBO4RoTTXvNuPqGSLUW41sTxA4-IDTkA&usqp=CAU"
+               alt="" height="100" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         </div>
+          <div id="name">
+              <a href="#parent" id="parent2">Parent</a>
+               <a href="#child" id="child">Child</a>
+               <a href="#teacher" id="teacher">Teacher</a>
+
+
+
+         <div id="info">
+            <form action="">
+               <div id="use" placeholder="username"> <input type="text" name="" id="text" placeholder="Username.."><br>
+               </div>
+               <!-- <input type="email" name="" id="text" placeholder="Email"><br>
+                <input type="password" name="pass" id="text" placeholder="Password"><br>
+                <input type="text" name="" id="text" placeholder="Confirm Password"><br>
+                <input type="submit" value="Signup"> -->
+               <div id="use" placeholder="username"> <input type="email" name="" id="text" placeholder="Email"><br>
+               </div>
+               <div id="use" placeholder="username"> <input type="password" name="pass" id="text"
+                     placeholder="Password"><br></div>
+               <div id="use" placeholder="username"> <input type="text" name="" id="text"
+                     placeholder="Confirm Password"><br><br></div>
+               <input type="submit" value="Signup" id="signup">
+            </form>
+         </div>
+   </main>
+</section>
+</body>
+
+</html>

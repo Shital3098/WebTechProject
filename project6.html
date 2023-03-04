@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #nav{
+         height: 602px;
+         width: 700px;
+         border: 1px solid;
+         margin-top: 300px;
+      }
+     #login{
+      height: 600px;
+      width: 300px;
+      border: 1px solid;
+      background-color: dodgerblue;
+     }
+     #form{
+        height: 600px;
+      width: 450px;
+      border: 1px solid;
+     }
+     #mobno{
+        height: 50px;
+        width: 350px;
+        margin-top: 100px;
+        border-top: 0px;
+      border-left: 0;
+      border-right: 0;
+      /* border-bottom: 50px; */
+     }
+     #pass{
+        height: 50px;
+        width: 300px;
+       margin-top: 25px;
+       display: inline-block;
+       border-top: 0px;
+      border-left: 0;
+      border-right: 0;
+      /* border-bottom: 50px; */
+      }
+    
+   #parent{
+      display: flex;
+      justify-content: center;
+   }
+   h1{
+    
+      margin-left: 20px;
+      margin-top: 100px;
+      color: aliceblue;
+      font-size: 50px;
+   }
+   #id{
+      margin-left: 20px;
+   }
+   #infor{
+     margin-left: 30px;
+   }
+   #sub{
+      height: 50px;
+      width: 400px;
+      display:flex;
+      justify-content: center;
+      border-top: 0px;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 50px;
+      box-shadow: 2px 3px 4px;
+      background-color: orangered;
+      
+   }
+   #or{
+      font-size: 25px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+   }
+   #request{
+      height: 50px;
+      width: 400px;
+      display:flex;
+      justify-content: center;
+      border-top: 0px;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 50px;
+      box-shadow: 2px 3px 4px black;
+      color: blue;
+   }
+   h3{
+      color: aliceblue;
+      font-size: 20px;
+      font-style: normal;
+      text-indent: 20px;
+            /* text-align: justify; */
+            /* letter-spacing: 10px; */
+            line-height: 1px;
+        }
+      img{
+         height: 200px;
+         width: 200px;
+         margin-top: 120px;
+         margin-left: 40px;
+         /* background-image: url(//static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png); */
+      }
+     #create{
+     display: flex;
+     justify-content: center;
+     color: blue;
+     text-decoration: none;
+     }
+
+    </style>
+</head>
+<body>
+   <nav id="parent">
+   <main id="login">
+    <h1>Login </h1>
+    <h3>Get access to your</h3>
+    <h3>orders,wishlist and</h3>
+    <h3>Recommondations</h3>
+      <div id="img"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png
+      " alt="" height="200px" width="300px"></div>
+   </main>
+  
+   <main id="form">
+    <form action="">
+      <div id="infor">
+        <input type="email" name="" id="mobno" placeholder="Enter Email /Mobile number">
+        <input type="password" name="" id="pass" placeholder="Enter Password" ><a href="#">forgot?</a>
+        <h5>By continuing, you agree to flipcart's <a href="#">  terms of use   </a> and   <a href="#">Privacy policy</a></h5>
+         <input type="submit" value="Login" id="sub">
+         <div id="or"><h6>OR</h6></div>
+        <a href=""><input type="button" value="Request OTP" id="request"></a> <br><br><br>
+        <div id="create"> <a href="#" id="new">New to Flipkart ? creat an account</a></div>
+      </div>
+    </form>
+   </main></nav>
+</body>
+</html>
